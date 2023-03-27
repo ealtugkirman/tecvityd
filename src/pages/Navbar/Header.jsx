@@ -24,10 +24,10 @@ const Header = () => {
     <header
       className={`${
         isActive ? "lg:top-0 shadow-2xl" : "lg:top-[0px]"
-      } py-6 lg:py-4 bg-transparent sticky top-0 sticky-top w-full hover:bg-blue-800 transition-all z-10`}>
+      } py-6 lg:py-4 bg-transparent sticky top-0 sticky-top w-full hover:bg-green-500 transition-all z-10`}>
       <div className="container mx-auto  flex justify-between items-center">
         {/* logo */}
-        <a href="/" className="w-1/5">
+        <a href="/" className="w-1/6">
           <img src={logo} alt="" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
@@ -36,8 +36,8 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className="text-white font-first bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-4 hidden lg:flex text-center mr-4 mb-4">
-          Contact NOW
+          className="text-white font-first bg-gradient-to-r from-blue-400 via-blue-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-4 hidden lg:flex text-center mr-4 mb-4">
+          Contact Now
         </button>
         {/* cta button - initially hidden - show on desktop mode */}
 

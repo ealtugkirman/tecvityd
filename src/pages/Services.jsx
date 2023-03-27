@@ -1,49 +1,47 @@
 import React from "react";
-import Lottie from "lottie-react";
-import Ui from "../assets/user-interface.json";
-import Web from "../assets/web-dev.json";
-import Mobile from "../assets/mobile.json";
-import Design from "../assets/design.json";
+import UI from "../assets/images/services/1.png";
+import Mobile from "../assets/images/services/3.png";
+import Web from "../assets/images/services/2.png";
+import Design from "../assets/images/services/4.png";
 
 function Services() {
   return (
     <div>
-      <div className="items-center justify-center flex">
-        <div className="flex justify-center px-4 pt-8 items-center text-sm lg:text-2xl flex-row">
-          <div className="w-1/4">
-            <h1 className="text-white font-first mb-4 mt-1 text-center">
-              User Interface
-            </h1>
-            <div className="w-4/5 mx-auto">
-              <Lottie animationData={Ui} loop={true} />
+      <div className="lg:flex py-4 px-4 lg:px-8">
+<div className="flex-row  mt-8 lg:mt-0  flex">
+          <div className="text-white font-first text-center text-sm xl:text-xl ">
+            <h1 className="">UI Design</h1>
+            <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
+              <img src={UI} alt="seo" />
             </div>
           </div>
-          <div className="w-1/4">
-            <h1 className="text-white font-first mb-8 lg:mb-16 text-center">
-              Web Development
-            </h1>
-            <div className="w-4/5 mx-auto">
-              <Lottie animationData={Web} loop={true} />
+          <div>
+            <div className="text-white font-first text-center text-sm xl:text-xl ">
+              <h1 className="">Web Development</h1>
+            </div>
+            <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
+              <img src={Web} alt="seo" />
             </div>
           </div>
-          <div className="w-1/4 mt-4">
-            <h1 className="text-white font-first mt-5 lg:pt-5 text-center">
-              Mobile App
-            </h1>
-            <div>
-              <Lottie animationData={Mobile} loop={true} />
+        </div>
+        <div className="flex-row mt-4 lg:mt-0   flex">
+          <div className="text-white font-first text-center text-sm xl:text-xl ">
+            <h1 className="">Mobile Development</h1>
+            <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
+              <img src={Mobile} alt="seo" />
             </div>
           </div>
-          <div className="w-1/4">
-            <h1 className="text-white font-first mt-8 text-center">
-              Graphic Design
-            </h1>
-            <div>
-              <Lottie animationData={Design} loop={true} />
+          <div>
+            <div className="text-white font-first text-center text-sm xl:text-xl ">
+              <h1 className="">Graphic Design</h1>
+            </div>
+            <div className="w-3/4 mb-8 lg:mb-12  mx-auto mt-2 lg:mt-8 lg:w-3/5">
+              <img src={Design} alt="seo" />
             </div>
           </div>
         </div>
       </div>
+
       <div className="flex justify-center">
         <button
           type="button"
