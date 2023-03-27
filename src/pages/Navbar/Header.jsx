@@ -31,12 +31,12 @@ const Header = () => {
           <img src={logo} alt="" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
-        <div className="hidden text-gray-200 w-2/5 lg:flex">
+        <div className="hidden font-first text-gray-200 w-2/5 lg:flex">
           <Nav />
         </div>
         <button
           type="button"
-          class="text-white bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-4 hidden lg:flex text-center mr-4 mb-4">
+          className="text-white font-first bg-gradient-to-r from-green-400 via-green-500 to-green-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-4 hidden lg:flex text-center mr-4 mb-4">
           Contact NOW
         </button>
         {/* cta button - initially hidden - show on desktop mode */}

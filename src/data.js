@@ -5,7 +5,6 @@ export const nav = [
     { name: 'About us', href: '/' },
     { name: 'Portfolio', href: '/' },
     { name: 'Blog', href: '/' },
-    { name: 'Blog', href: '/' },
 ];
 
 
