@@ -1,7 +1,7 @@
 import React from "react";
 import hero1 from "../assets/hero-left.json";
 import Lottie from "lottie-react";
-import button from "../assets/button.json";
+import button from "../assets/button-green.json";
 import hero2 from "../assets/hero3.json";
 import { motion } from 'framer-motion'
 import { fadeIn } from '../variants'
@@ -14,13 +14,13 @@ function Hero() {
       </motion.div>
 
       <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="text-white font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-center items-center flex flex-col justify-center">
-        <h1 className="font-bold py-4 lg:py-8 text-5xl hover:text-red-400 lg:text-6xl">
+        <h1 className="font-bold py-4 lg:py-8 text-5xl hover:text-green-500 lg:text-6xl">
           Creative Technological <br /> Solutions
         </h1>
-        <p className="text-xl py-2 hover:text-blue-300">
+        <p className="text-xl py-2 hover:text-green-500">
           Wee see what others don't
         </p>
-        <p className="text-xl py-2 hover:text-blue-300">
+        <p className="text-xl py-2 hover:text-green-500">
           We deliver what other won't
         </p>
         <div className="w-1/2 lg:w-1/6 pt-4 items-center justify-center flex">

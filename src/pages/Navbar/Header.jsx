@@ -5,7 +5,7 @@ import { header } from "../../data";
 import { HiMenuAlt4, HiOutlineX } from "react-icons/hi";
 // import components
 import MobileNav from "./MobileNav";
-import Nav from ".//Nav";
+import Nav from "./Nav";
 
 const Header = () => {
   // mobile nav state

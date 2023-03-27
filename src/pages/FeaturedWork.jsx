@@ -18,7 +18,7 @@ const FeaturedWork = () => {
   return (
     <div className="bg-green-400 mt-14">
       <div className="justify-center flex">
-        <h1 className="bg-gradient-to-r mt-6 lg:mt-12 mb-6 from-green-800 text-5xl lg:text-8xl text-center text-md font-first via-blue-500 to-red-600 inline-block text-transparent bg-clip-text">
+        <h1 className="bg-gradient-to-r mt-6 lg:mt-12 mb-6 from-white text-5xl lg:text-8xl text-center text-md font-first via-red-100 to-white inline-block text-transparent hover:text-green-700 bg-clip-text">
           Featured Work
         </h1>
       </div>
