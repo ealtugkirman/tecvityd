@@ -3,6 +3,7 @@ import Header from "./pages/Navbar/Header";
 import Hero from "./pages/Hero";
 import Services from "./pages/Services";
 import FeaturedWork from "./pages/FeaturedWork";
+import Footer from "./pages/Footer";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <Services />
         <FeaturedWork />
+        <Footer />
       <div className="h-[4000px]"></div>
       </div>
       </Router>
