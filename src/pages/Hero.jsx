@@ -9,21 +9,21 @@ import { fadeIn } from '../variants'
 function Hero() {
   return (
     <div className="bg-black">
-      <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="hidden lg:flex absolute mt-18 left-0 w-2/5">
+      <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="hidden lg:flex absolute mt-40 left-0 w-2/5">
         <Lottie animationData={hero1} loop={true} />
       </motion.div>
 
-      <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="text-white font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-center items-center flex flex-col justify-center">
-        <h1 className="font-bold py-4 lg:py-8 text-5xl hover:text-green-500 lg:text-6xl">
+      <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-white text-center items-center flex flex-col justify-center">
+        <h1 className="bg-gradient-to-r from-green-500 bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-green-500 lg:text-7xl">
           Creative Technological <br /> Solutions
         </h1>
-        <p className="text-xl py-2 hover:text-green-500">
+        <p className="text-2xl py-4 text-white hover:text-green-500">
           Wee see what others don't
         </p>
-        <p className="text-xl py-2 hover:text-green-500">
+        <p className="text-2xl py-4 text-white hover:text-green-500">
           We deliver what other won't
         </p>
-        <div className="w-1/2 lg:w-1/6 pt-4 items-center justify-center flex">
+        <div className="w-1/2 lg:w-3/12 mt-8 items-center justify-center flex">
           <Lottie animationData={button} loop={true} />
         </div>
       </motion.div>
@@ -31,7 +31,7 @@ function Hero() {
         <Lottie animationData={hero2} loop={true} />
           </motion.div>
           <motion.div variants={fadeIn('up', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}}>
-              <h1 className="text-red-200 pl-8 lg:pl-14 pt-14 lg:pb-10  font-first text-3xl lg:text-7xl">
+              <h1 className="text-green-500 text-center pt-32 lg:pb-10  font-first text-3xl lg:text-7xl">
                   What Tecvity Offers?
               </h1>
           </motion.div>

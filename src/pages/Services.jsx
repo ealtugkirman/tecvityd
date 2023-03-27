@@ -48,7 +48,7 @@ function Services() {
       <div className="flex justify-center">
         <button
           type="button"
-          className="text-white font-first bg-gradient-to-r from-blue-400 via-green-blue-400 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-4 lg:px-8 py-2 lg:py-4 text-center">
+          className="text-white font-first bg-gradient-to-r from-green-500 via-green-blue-400 to-green-800 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-sm lg:text-lg px-4 lg:px-8 py-2 lg:py-4 text-center">
           More Services
         </button>
       </div>

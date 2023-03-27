@@ -36,7 +36,7 @@ const Header = () => {
         </div>
         <button
           type="button"
-          className="text-white font-first bg-gradient-to-r from-blue-400 via-blue-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-800 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-4 hidden lg:flex text-center mr-4 mb-4">
+          className="text-white font-first bg-gradient-to-r from-green-500 via-green-700 to-green-900 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-green-300 dark:focus:ring-green-900 shadow-lg shadow-green-500/50 dark:shadow-lg dark:shadow-green-800/80 font-medium rounded-lg text-md px-8 py-3 hidden lg:flex text-center mr-4 mb-4">
           Contact Now
         </button>
         {/* cta button - initially hidden - show on desktop mode */}
@@ -44,9 +44,9 @@ const Header = () => {
         {/* mobile nav trigger btn - hidden on desktop */}
         <button className="lg:hidden" onClick={() => setMobileNav(!mobileNav)}>
           {mobileNav ? (
-            <HiOutlineX className="text-3xl text-accent" />
+            <HiOutlineX className="text-3xl text-white" />
           ) : (
-            <HiMenuAlt4 className="text-3xl text-accent" />
+            <HiMenuAlt4 className="text-3xl text-white" />
           )}
         </button>
         {/* mobile nav - hidden on desktop */}
