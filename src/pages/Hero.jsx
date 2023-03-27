@@ -7,7 +7,7 @@ import hero2 from "../assets/hero3.json";
 function Hero() {
   return (
     <div className="bg-black">
-      <div className=" absolute top-48 lg:top-72 left-0 lg:left-16 w-1/5">
+      <div className=" absolute top-72 lg:top-72 left-0 lg:left-16 w-1/5">
         <img src={hero1} alt="seo" />
       </div>
 
@@ -21,7 +21,7 @@ function Hero() {
         <p className="lg:text-xl py-2 hover:text-blue-300">
           We deliver what other won't
         </p>
-        <div className="w-1/6 pt-4 items-center justify-center flex">
+        <div className="w-1/3 lg:1/ pt-4 items-center justify-center flex">
           <Lottie animationData={button} loop={true} />
         </div>
       </div>

@@ -8,7 +8,7 @@ import Design from "../assets/design.json";
 function Services() {
   return (
     <div>
-      <div className="flex justify-center px-4  pt-8 items-center text-md lg:text-2xl flex-row">
+      <div className="flex justify-center px-4  pt-8 items-center text-sm lg:text-2xl flex-row">
         <div className="w-1/4">
         <h1 className="text-white font-first mb-4 mt-1 text-center">
           User  Interface
