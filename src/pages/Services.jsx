@@ -1,11 +1,9 @@
 import React from "react";
-import hero2 from "../assets/hero3.json";
 import Lottie from "lottie-react";
 import Ui from "../assets/user-interface.json";
 import Web from "../assets/web-dev.json";
 import Mobile from "../assets/mobile.json";
 import Design from "../assets/design.json";
-import Card from "../components/Card";
 
 function Services() {
   return (
