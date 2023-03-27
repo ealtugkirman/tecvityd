@@ -21,7 +21,7 @@ function Hero() {
         <p className="lg:text-xl py-2 hover:text-blue-300">
           We deliver what other won't
         </p>
-        <div className="w-1/3 lg:1/6 pt-4 items-center justify-center flex">
+        <div className="w-1/3 lg:w-1/6 pt-4 items-center justify-center flex">
           <Lottie animationData={button} loop={true} />
         </div>
       </div>
