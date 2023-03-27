@@ -1,8 +1,9 @@
 import React from "react";
-import UI from "../assets/images/services/1.png";
-import Mobile from "../assets/images/services/3.png";
-import Web from "../assets/images/services/2.png";
-import Design from "../assets/images/services/4.png";
+import UI from "../assets/user-interface.json";
+import Lottie from "lottie-react";
+import Mobile from "../assets/mobil.json";
+import Web from "../assets/web-dev.json";
+import Design from "../assets/designn.json";
 
 function Services() {
   return (
@@ -12,7 +13,8 @@ function Services() {
           <div className="text-white font-first text-center text-sm xl:text-xl ">
             <h1 className="">UI Design</h1>
             <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
-              <img src={UI} alt="seo" />
+
+        <Lottie animationData={UI} loop={true} />
             </div>
           </div>
           <div>
@@ -20,7 +22,7 @@ function Services() {
               <h1 className="">Web Development</h1>
             </div>
             <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
-              <img src={Web} alt="seo" />
+        <Lottie animationData={Web} loop={true} />
             </div>
           </div>
         </div>
@@ -28,7 +30,7 @@ function Services() {
           <div className="text-white font-first text-center text-sm xl:text-xl ">
             <h1 className="">Mobile Development</h1>
             <div className="w-3/4 mx-auto mt-2 lg:mt-8 lg:w-3/5">
-              <img src={Mobile} alt="seo" />
+        <Lottie animationData={Mobile} loop={true} />
             </div>
           </div>
           <div>
@@ -36,7 +38,7 @@ function Services() {
               <h1 className="">Graphic Design</h1>
             </div>
             <div className="w-3/4 mb-8 lg:mb-12  mx-auto mt-2 lg:mt-8 lg:w-3/5">
-              <img src={Design} alt="seo" />
+        <Lottie animationData={Design} loop={true} />
             </div>
           </div>
         </div>
@@ -49,6 +51,7 @@ function Services() {
           More Services
         </button>
       </div>
+       
     </div>
   );
 }

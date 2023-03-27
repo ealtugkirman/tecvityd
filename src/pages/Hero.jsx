@@ -12,16 +12,16 @@ function Hero() {
       </div>
 
       <div className="text-white font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-center items-center flex flex-col justify-center">
-        <h1 className="font-bold py-4 lg:py-8 text-3xl hover:text-red-400 lg:text-6xl">
+        <h1 className="font-bold py-4 lg:py-8 text-5xl hover:text-red-400 lg:text-6xl">
           Creative Technological <br /> Solutions
         </h1>
-        <p className="lg:text-xl py-2 hover:text-blue-300">
+        <p className="text-xl py-2 hover:text-blue-300">
           Wee see what others don't
         </p>
-        <p className="lg:text-xl py-2 hover:text-blue-300">
+        <p className="text-xl py-2 hover:text-blue-300">
           We deliver what other won't
         </p>
-        <div className="w-1/3 lg:w-1/6 pt-4 items-center justify-center flex">
+        <div className="w-1/2 lg:w-1/6 pt-4 items-center justify-center flex">
           <Lottie animationData={button} loop={true} />
         </div>
       </div>
