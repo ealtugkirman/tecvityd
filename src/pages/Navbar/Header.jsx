@@ -24,14 +24,14 @@ const Header = () => {
     <header
       className={`${
         isActive ? "lg:top-0 shadow-2xl" : "lg:top-[0px]"
-      } py-6 lg:py-4 bg-transparent sticky top-0 sticky-top w-full hover:bg-slate-700 transition-all z-10`}>
+      } py-6 lg:py-4 bg-transparent sticky top-0 sticky-top w-full hover:bg-blue-800 transition-all z-10`}>
       <div className="container mx-auto  flex justify-between items-center">
         {/* logo */}
         <a href="/" className="w-1/5">
           <img src={logo} alt="" />
         </a>
         {/* nav - initially hidden - show on desktop mode */}
-        <div className="hidden font-first text-gray-200 w-2/5 lg:flex">
+        <div className="hidden text-lg font-first text-gray-200 w-2/5 lg:flex">
           <Nav />
         </div>
         <button
