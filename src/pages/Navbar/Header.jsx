@@ -13,7 +13,7 @@ const Header = () => {
   // header state
   const [isActive, setIsActive] = useState(false);
   // destructure header data
-  const { logo, btnText } = header;
+  const { logo } = header;
   // scroll event
   useEffect(() => {
     window.addEventListener("scroll", () => {
