@@ -11,16 +11,16 @@ export default function App() {
   return (
    
     
-    <Router>
         <div className=" bg-black bg-cover">
+    <Router>
         <Header />
         <Hero />
         <Services />
         <FeaturedWork />
-        {/* <Vision /> */}
+        <Vision />
         <ContactUs />
         <Footer />
-      </div>
       </Router>
+      </div>
   );
 }

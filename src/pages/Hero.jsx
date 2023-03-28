@@ -8,12 +8,12 @@ import { fadeIn } from '../variants'
 
 function Hero() {
   return (
-    <div className="bg-black lg:mt-0 mt-24">
+    <div className="lg:mt-0 mt-24">
       <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="hidden lg:flex absolute mt-40 left-0 w-2/5">
         <Lottie animationData={hero1} loop={true} />
       </motion.div>
 
-      <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-white text-center items-center flex flex-col justify-center">
+      <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-white text-center items-center flex flex-col">
         <h1 className="bg-gradient-to-r from-green-500 bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-green-500 lg:text-7xl">
           Creative Technological Solutions
         </h1>
