@@ -8,7 +8,7 @@ import { fadeIn } from '../variants'
 
 function Hero() {
   return (
-    <div className="bg-black ">
+    <div className="bg-black lg:mt-0 mt-24">
       <motion.div variants={fadeIn('right', 0.4)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="hidden lg:flex absolute mt-40 left-0 w-2/5">
         <Lottie animationData={hero1} loop={true} />
       </motion.div>
