@@ -14,10 +14,10 @@ const Nav = () => {
           if (name === "Services") {
             return (
               <li key={index} className="relative">
-
                 <button
-                  className="hover:text-black hover:underline transition focus:outline-none"
-                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                  className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
+                  onMouseEnter={() => setIsDropdownOpen(true)}
+                  onMouseLeave={() => setIsDropdownOpen(false)}>
                   {name}
                 </button>
                 <FaCaretDown className="inline-block ml-1 text-white" />
