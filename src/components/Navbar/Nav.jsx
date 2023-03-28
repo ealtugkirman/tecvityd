@@ -1,9 +1,24 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { nav } from "../../data";
 import { FaCaretDown } from "react-icons/fa";
 
 const Nav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+const dropdownTimeoutRef = useRef(null);
+
+function handleMouseLeave() {
+  dropdownTimeoutRef.current = setTimeout(() => {
+    setIsDropdownOpen(false);
+  }, 1500); // 500ms sonra dropdown kapanacak
+}
+
+function handleMouseEnter() {
+  if (dropdownTimeoutRef.current !== null) {
+    clearTimeout(dropdownTimeoutRef.current);
+    dropdownTimeoutRef.current = null;
+  }
+  setIsDropdownOpen(true);
+}
 
   return (
     <nav>
@@ -13,16 +28,17 @@ const Nav = () => {
 
           if (name === "Services") {
             return (
-              <li key={ index } className="relative">
+              <li key={index} className="relative">
                 <div className="text-white hover:text-black">
                   <button
-                  className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}>
-                  {name}
-                <FaCaretDown className="inline-block ml-1" />
-                </button>
-                    </div>
+                    className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
+                    onMouseEnter={handleMouseEnter}
+                    onClick={() => setIsDropdownOpen(true)}
+                    onMouseLeave={handleMouseLeave}>
+                    {name}
+                    <FaCaretDown className="inline-block ml-1" />
+                  </button>
+                </div>
                 <ul
                   className={`absolute mt-2 py-2 w-48 bg-white font-first text-sm rounded-md shadow-lg ${
                     isDropdownOpen ? "" : "hidden"
