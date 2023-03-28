@@ -25,7 +25,7 @@ const Header = () => {
       className={`${
         isActive ? "lg:top-0  shadow-2xl" : "lg:top-[0px]"
       } py-6 lg:py-4 bg-transparent sticky top-0 sticky-top w-full hover:bg-green-500 transition-all z-10`}>
-      <div className="mx-auto  flex justify-between items-center">
+      <div className="container mx-auto  flex justify-between items-center">
         {/* logo */}
         <a href="/" className=" w-2/5 lg:w-1/6">
           <img src={logo} alt="" />
