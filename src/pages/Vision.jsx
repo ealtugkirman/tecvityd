@@ -1,5 +1,5 @@
 import React from "react";
-import VisionImg from "./../assets/images/pages/vision.jpg";
+// import VisionImg from "./../assets/images/pages/vision.jpg";
 
 const Vision = () => {
   return (
