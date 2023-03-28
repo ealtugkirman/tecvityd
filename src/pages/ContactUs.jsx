@@ -41,15 +41,14 @@ export const ContactUs = () => {
 
   return (
     <div>
-      <section className="text-white font-first flex">
+      <section className="text-white mb-16 font-first flex">
         <div className="px-5 py-24 mx-auto">
           <motion.div variants={fadeIn('left', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-4xl lg:text-7xl mb-4 lg:mb-12 text-green-500">
               Contact Us
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed ">
-              Thank you for your interest in Tecvity, we will get in touch with
-              you soon.
+              Have some ideas to discuss with Tecvity? Fill the form below!
             </p>
           </motion.div>
           <div className="lg:w-1/2 md:w-2/3 mx-auto">
