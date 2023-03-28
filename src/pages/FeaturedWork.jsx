@@ -30,7 +30,7 @@ const FeaturedWork = () => {
           </h1>
         </motion.div>
       </div>
-      <motion.div  variants={fadeIn("down", 0.3)}
+      <motion.div  variants={fadeIn("right", 0.3)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }} className=" w-full mt-12 lg:w-4/5 flex border-4 border-white items-center justify-center mx-auto mb-24">

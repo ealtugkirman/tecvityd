@@ -2,41 +2,42 @@ import React, { useState } from "react";
 import { nav } from "../../data";
 import { FaCaretDown } from "react-icons/fa";
 
-const Nav = () => {
+const MobileNav = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav>
-      <ul className="flex gap-x-10">
+    <div className="bg-gradient-to-b from-green-400 via-green-700 font-first to-green-900 w-full h-full">
+      <ul className="h-full flex flex-col justify-center items-center gap-y-8">
         {nav.map((item, index) => {
           const { href, name } = item;
 
           if (name === "Services") {
             return (
               <li key={index} className="relative">
-                <button
-                  className="transition focus:text-black focus:underline focus:outline-none hover:text-red hover:underline"
-                  onMouseEnter={() => setIsDropdownOpen(true)}
-                  onMouseLeave={() => setIsDropdownOpen(false)}>
-                  {name}
-                </button>
-                <FaCaretDown className="inline-block ml-1 text-white" />
+                <div className=" text-white hover:text-black">
+                  <button
+                    className="link text-white text-xl hover:text-black hover:underline transition focus:outline-none"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+                    {name}
+                    <FaCaretDown className="inline-block ml-1" />
+                  </button>
+                </div>
                 <ul
-                  className={`absolute mt-2 py-2 w-48 bg-white font-first text-sm rounded-md shadow-lg ${
+                  className={`absolute mt-2 py-2 w-48 bg-white text-sm font-first rounded-md shadow-lg ${
                     isDropdownOpen ? "" : "hidden"
                   }`}>
                   <li>
                     <a
                       href="/"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Mobile Development
+                      Web Development
                     </a>
                   </li>
                   <li>
                     <a
                       href="/"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      Web Development
+                      UI/UX Design
                     </a>
                   </li>
                   <li>
@@ -50,7 +51,7 @@ const Nav = () => {
                     <a
                       href="/"
                       className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-                      UI/UX Design
+                      Mobile Development
                     </a>
                   </li>
                 </ul>
@@ -61,7 +62,7 @@ const Nav = () => {
           return (
             <li key={index}>
               <a
-                className="hover:text-black hover:underline transition"
+                className="link text-white text-xl hover:text-black hover:underline transition"
                 href={href}>
                 {name}
               </a>
@@ -69,8 +70,8 @@ const Nav = () => {
           );
         })}
       </ul>
-    </nav>
+    </div>
   );
 };
 
-export default Nav;
+export default MobileNav;

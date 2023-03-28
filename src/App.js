@@ -1,9 +1,10 @@
 import { BrowserRouter as Router } from "react-router-dom";
-import Header from "./pages/Navbar/Header";
+import Header from "./components/Navbar/Header";
 import Hero from "./pages/Hero";
 import Services from "./pages/Services";
 import FeaturedWork from "./pages/FeaturedWork";
-import Footer from "./pages/Footer";
+import Footer from "./components/Footer";
+import { ContactUs } from "./pages/ContactUs";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Services />
         <FeaturedWork />
+        <ContactUs />
         <Footer />
       </div>
       </Router>
