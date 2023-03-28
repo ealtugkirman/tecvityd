@@ -17,7 +17,7 @@ export default function App() {
         <Hero />
         <Services />
         <FeaturedWork />
-        <Vision />
+        {/* <Vision /> */}
         <ContactUs />
         <Footer />
       </div>
