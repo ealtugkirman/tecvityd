@@ -9,7 +9,7 @@ import { fadeIn } from "../variants";
 
 function Services() {
   return (
-    <div>
+    <div className="mb-32 pb-24">
       <div className="lg:flex pt-4 px-4 lg:px-8">
         <div className="flex-row  mt-8 lg:mt-0  flex">
           <motion.div variants={fadeIn('right', 0.5)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="text-white font-first text-center text-sm xl:text-xl ">

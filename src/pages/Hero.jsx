@@ -15,7 +15,7 @@ function Hero() {
 
       <motion.div variants={fadeIn('down', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}} className="font-first pb-4 lg:pb-24 pt-0 lg:pt-12 text-white text-center items-center flex flex-col justify-center">
         <h1 className="bg-gradient-to-r from-green-500 bg-clip-text via-blue-200 to-green-800 inline-block text-transparent font-bold py-4 lg:pb-14 text-5xl hover:text-green-500 lg:text-7xl">
-          Creative Technological <br /> Solutions
+          Creative Technological Solutions
         </h1>
         <p className="text-2xl py-4 text-white hover:text-green-500">
           Wee see what others don't
@@ -31,7 +31,7 @@ function Hero() {
         <Lottie animationData={hero2} loop={true} />
           </motion.div>
           <motion.div variants={fadeIn('up', 0.3)} initial="hidden" whileInView={"show"} viewport={{once:false, amount: 0.3}}>
-              <h1 className="text-green-500 text-center pt-32 lg:pb-10  font-first text-3xl lg:text-7xl">
+              <h1 className="text-green-500 text-center pt-48 mt-20 lg:pb-10  font-first text-3xl lg:text-7xl">
                   What Tecvity Offers?
               </h1>
           </motion.div>
