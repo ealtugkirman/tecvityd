@@ -16,7 +16,6 @@ export default function App() {
         <Services />
         <FeaturedWork />
         <Footer />
-      <div className="h-[4000px]"></div>
       </div>
       </Router>
   );
