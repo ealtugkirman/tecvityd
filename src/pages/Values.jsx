@@ -18,11 +18,11 @@ const Values = () => {
         initial="hidden"
         whileInView={"show"}
         viewport={{ once: false, amount: 0.3 }}
-        className="text-center py-8 font-first ">
-        <h1 className="text-7xl py-4 text-green-500 mb-8 mt-24">
+        className="text-center py-8 px-2 font-first ">
+        <h1 className="text-6xl lg:text-7xl py-4 text-green-500 mb-8 mt-24">
           Our Core Values
         </h1>
-        <p className="text-lg text-white ">
+        <p className="text-lg  text-white ">
           From The Last Many Years, We Have Been Building Great Software
           Products For Our Clients.
         </p>
