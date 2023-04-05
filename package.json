@@ -1,6 +1,5 @@
 {
   "name": "tecvityreact",
-  "homepage": "http://tecvity.co",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
