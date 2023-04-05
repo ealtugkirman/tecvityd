@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/UiVideo.mp4";
 import { Link } from "react-scroll";
-import Ui from "../../assets/services/User.json";
+import Ui from "../../assets/services/Ui.json";
 import ServiceCard from "../../components/ServiceCard";
 import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
 import { MdSecurity, MdSettings } from "react-icons/md";
