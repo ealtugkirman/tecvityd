@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 import BgVideo from "../../assets/videos/UiVideo.mp4";
 import { Link } from "react-scroll";
-import Ui from "../../assets/services/Ui.json";
+// import Ui from "../../assets/services/Ui.json";
 import ServiceCard from "../../components/ServiceCard";
 import { FaShieldAlt, FaUser, FaChartLine } from "react-icons/fa";
 import { MdSecurity, MdSettings } from "react-icons/md";
@@ -71,14 +71,14 @@ function Hero() {
             maximize your return on investment.
           </p>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={fadeIn("right", 0.5)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.3 }}
           className="w-4/5  lg:w-1/2 flex mx-auto flex-col lg:flex-row justify-center ">
           <Lottie animationData={Ui} loop={true} />
-        </motion.div>
+        </motion.div> */}
       </div>
       <div className="pt-60">
           <h1 className="text-2xl mt-30 text-center mb-4 lg:mb-8 text-main lg:text-4xl">
